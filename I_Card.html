@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="UI.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Montserrat:ital,wght@0,400;1,300&family=Roboto:ital,wght@0,100;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Name Card</title>
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #03072a;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass{
+    width: 600px;
+    height: 350px;
+    box-shadow: 20px 20px 25px rgba(0, 0, 0, 0.2);
+    background:rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 3em;
+    backdrop-filter: blur(25px);
+    display: flex;
+    position: fixed;
+}
+
+.circle1{
+    height:400px;
+    width:400px;
+    position:relative;
+    background:linear-gradient(
+        220deg,
+        #8bcfff 30% ,
+        rgb(0, 109, 252)
+       
+    );
+    border-radius: 50%;
+    left: 300px;
+    bottom: 100px;
+}
+.circle2{
+    height: 250px;
+    width:250px;
+    background:radial-gradient(
+    rgba(60, 79, 226, 0.726)100px,
+    #dbbad7
+    );
+    position: relative;
+    border-radius: 50%;
+    right: 430px;
+    top:100px;
+}
+h2{
+    padding-bottom:5px ;
+}
+.content{
+    padding-right:60px;
+    margin-left:-40px;
+    margin-top: 150px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:20px;
+    word-spacing: 4px;
+    font-style:inherit;
+    color: rgba(184, 238, 248, 0.5);
+}
+img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        object-position:60%;
+        border-radius:50%;
+    }
+.box {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    bottom: -50px;
+    left: 430px;
+}
+  .curve-symbol {
+    width: 25%;
+    height:25%;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: rotate(130deg);
+    position: absolute;
+    top: -30%;
+  }
+  .curve-circle {
+    Border: 5px solid ;
+    border-radius: 40%;
+    position: absolute;
+  }
+  .first {
+    width: 150%;
+    height: 150%;
+    top: 30%;
+    left: 30%;
+    padding-right:2px;
+
+  }
+  .second {
+    width: 120%;
+    height: 120%;
+    top: 50%;
+    left: 50%;
+    padding-right:2px;
+
+  }
+  .third {
+    width: 80%;
+    height: 80%;
+    top: 70%;
+    left: 70%;
+    padding-right:2px;
+
+  }
+  .fourth {
+    width: 50%;
+    height: 50%;
+    top: 85%;
+    left: 85%;    
+    padding-right:2px;
+
+  }
+ 
+    </style>
+  </head>
+  <body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="glass">
+        <img class="img" src="https://lh3.googleusercontent.com/Vle8AOXAxfzDIkzIH2w4_aOarXG5EsYvMbQV9aoPK5WKj5yiFlzNaXIx1NuEy6grPP9Ej4Y=s128" alt="">
+        <div class="content">
+        <h2>6379014761</h2>
+        <h2>DEERAJ N</h2>
+        <div class="box">
+            <div class="curve-symbol">
+              <div class="curve-circle first"></div>
+              <div class="curve-circle second"></div>
+              <div class="curve-circle third"></div>
+              <div class="curve-circle fourth"></div>
+            </div>
+      </div>
+      </div>    
+  </body>
+</html>
